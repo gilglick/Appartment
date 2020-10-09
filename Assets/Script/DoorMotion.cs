@@ -16,7 +16,7 @@ public class DoorMotion : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.CompareTag("SpartanKing") || other.CompareTag("Monster"))
         {
             animator.SetTrigger("Open");
             isOpen = true;

@@ -22,7 +22,7 @@ public class GlassDoorMotion : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("MainCamera"))
+        if (other.CompareTag("SpartanKing") || other.CompareTag("Monster"))
         {
             isOpen = true;
             animator.SetTrigger("GlassOpen");
